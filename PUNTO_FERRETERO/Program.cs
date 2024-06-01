@@ -16,10 +16,16 @@ builder.Services.AddDbContext<PUNTO_FERRETEROContext>(opt =>
 
 });
 builder.Services.AddTransient<IUserRepository, UserRepository>();
-builder.Services.AddTransient<IUserService, UserService>();/*
+builder.Services.AddTransient<IUserService, UserService>();
+
 builder.Services.AddTransient<IProductRepository, ProductRepository>();
 builder.Services.AddTransient<IProductService, ProductService>();
-*/
+
+builder.Services.AddTransient<ISalesRepository, SalesRepository>();
+builder.Services.AddTransient<ISalesService, SalesService>();
+
+builder.Services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+builder.Services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
 #endregion
 
