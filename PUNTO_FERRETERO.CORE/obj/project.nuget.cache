@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6j4JK55o4ia0D6tL00W126vQB2cW1gWFmogCdjEbPftPY06GUGlJOEnWX6c3G/HGIhwTC3Bbt8NnyXQQaPzH7w==",
+  "dgSpecHash": "FxF7pNvU3XTZPCx68eY8/ZTJLYw2bH1LBnyBXPUzxDa1AsP+oua6NNwA0rYFAr3LuOD5XkqQN1v+ScIzwVsG+A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\guachi\\source\\repos\\PUNTO_FERRETERO\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
+  "projectFilePath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\guachi\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\guachi\\.nuget\\packages\\lightinject\\5.4.0\\lightinject.5.4.0.nupkg.sha512",

@@ -7824,11 +7824,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guachi\\source\\repos\\PUNTO_FERRETERO\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
+      "projectUniqueName": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
       "projectName": "PUNTO_FERRETERO.CORE",
-      "projectPath": "C:\\Users\\guachi\\source\\repos\\PUNTO_FERRETERO\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
+      "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
       "packagesPath": "C:\\Users\\guachi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guachi\\source\\repos\\PUNTO_FERRETERO\\PUNTO_FERRETERO.CORE\\obj\\",
+      "outputPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\guachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7845,8 +7845,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\guachi\\source\\repos\\PUNTO_FERRETERO\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
-              "projectPath": "C:\\Users\\guachi\\source\\repos\\PUNTO_FERRETERO\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj"
+            "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
+              "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj"
             }
           }
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PUNTO_FERRETERO.CORE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a7d967d681833e370efdbfee9f0fdd54d98fffd")]
 [assembly: System.Reflection.AssemblyProductAttribute("PUNTO_FERRETERO.CORE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PUNTO_FERRETERO.CORE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

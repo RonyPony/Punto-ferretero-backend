@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PUNTO_FERRETERO.props" />
+</Project>

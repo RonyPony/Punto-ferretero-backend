@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PUNTO_FERRETERO.props" />
+</Project>
