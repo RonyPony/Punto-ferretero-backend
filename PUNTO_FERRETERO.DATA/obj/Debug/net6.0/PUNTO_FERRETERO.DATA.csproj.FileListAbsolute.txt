@@ -1,0 +1,12 @@
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\PUNTO_FERRETERO.DATA.csproj.AssemblyReference.cache
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\PUNTO_FERRETERO.DATA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\PUNTO_FERRETERO.DATA.AssemblyInfoInputs.cache
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\PUNTO_FERRETERO.DATA.AssemblyInfo.cs
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\PUNTO_FERRETERO.DATA.csproj.CoreCompileInputs.cache
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\bin\Debug\net6.0\PUNTO_FERRETERO.DATA.deps.json
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\bin\Debug\net6.0\PUNTO_FERRETERO.DATA.dll
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\bin\Debug\net6.0\PUNTO_FERRETERO.DATA.pdb
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\PUNTO_FERRETERO.DATA.dll
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\refint\PUNTO_FERRETERO.DATA.dll
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\PUNTO_FERRETERO.DATA.pdb
+C:\Users\guachi\source\repos\PUNTO_FERRETERO\PUNTO_FERRETERO.DATA\obj\Debug\net6.0\ref\PUNTO_FERRETERO.DATA.dll
