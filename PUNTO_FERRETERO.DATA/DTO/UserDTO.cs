@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage;
 
 namespace PUNTO_FERRETERO.DATA.DTO
 {
-    internal class UserDTO
+    public class UserDTO
     {
         public Guid userId { get; set; }
         public string name { get; set; }

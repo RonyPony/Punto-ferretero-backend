@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PUNTO_FERRETERO.DATA.MODELS
 {
-    public class Products
+    public class Product
     {
         public Guid productId { get; set; }
         public string productName { get; set; }

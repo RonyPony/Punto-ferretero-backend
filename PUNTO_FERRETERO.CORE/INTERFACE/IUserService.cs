@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PUNTO_FERRETERO.CORE.INTERFACE
 {
-    internal interface IUserService
+    public interface IUserService
     {
         public IEnumerable<User> GetAllUsers();
         public Task<User> GetUserById(Guid id);

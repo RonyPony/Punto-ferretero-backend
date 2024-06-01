@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PUNTO_FERRETERO.DATA.CONTEXT
 {
-    internal partial class PUNTO_FERRETEROContext : DbContext
+    public partial class PUNTO_FERRETEROContext : DbContext
     {
         public PUNTO_FERRETEROContext(DbContextOptions<PUNTO_FERRETEROContext> options)
            : base(options)
@@ -19,7 +19,7 @@ namespace PUNTO_FERRETERO.DATA.CONTEXT
         public DbSet<User>users { get; set; }
         public DbSet<Discount> discounts { get; set; }
         public DbSet<ProductCategory> productCategories { get; set; }
-        public DbSet<Products> Products { get; set; }
+        public DbSet<Product> Products { get; set; }
         public DbSet<Sales> Sales { get; set; }
     }
 }
