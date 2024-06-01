@@ -1,5 +1,7 @@
+using Microsoft.EntityFrameworkCore;
 using PUNTO_FERRETERO.CORE.INTERFACE;
 using PUNTO_FERRETERO.CORE.SERVICES;
+using PUNTO_FERRETERO.DATA.CONTEXT;
 using PUNTO_FERRETERO.DATA.CONTRACT;
 using PUNTO_FERRETERO.DATA.REPOSITORY;
 
@@ -8,7 +10,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 #region Services injection 
+builder.Services.AddDbContext<PUNTO_FERRETEROContext>(opt =>
+{
+    opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 
+});
 builder.Services.AddTransient<IUserRepository, UserRepository>();
 builder.Services.AddTransient<IUserService, UserService>();/*
 builder.Services.AddTransient<IProductRepository, ProductRepository>();

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace PUNTO_FERRETERO.DATA.MODELS
 {
     public class Discount
     {
+        [Key]
         public Guid discountId { get; set; }
         public string discountName { get; set; }
         public decimal discountPorcentage { get; set; }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj": {}
+    "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj": {}
   },
   "projects": {
-    "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj": {
+    "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
+        "projectUniqueName": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
         "projectName": "PUNTO_FERRETERO.CORE",
-        "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
-        "packagesPath": "C:\\Users\\guachi\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\obj\\",
+        "projectPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj",
+        "packagesPath": "C:\\Users\\leopardo\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leopardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
-                "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj"
+              "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
+                "projectPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj"
               }
             }
           }
@@ -54,6 +54,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.31, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.30, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -82,21 +86,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
+    "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj",
+        "projectUniqueName": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj",
         "projectName": "PUNTO_FERRETERO.DATA",
-        "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj",
-        "packagesPath": "C:\\Users\\guachi\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\obj\\",
+        "projectPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj",
+        "packagesPath": "C:\\Users\\leopardo\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leopardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -137,6 +141,10 @@
               "target": "Package",
               "version": "[6.0.31, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.30, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -160,21 +168,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj": {
+    "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj",
+        "projectUniqueName": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj",
         "projectName": "PUNTO_FERRETERO",
-        "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj",
-        "packagesPath": "C:\\Users\\guachi\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\obj\\",
+        "projectPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\PUNTO_FERRETERO.csproj",
+        "packagesPath": "C:\\Users\\leopardo\\.nuget\\packages\\",
+        "outputPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\guachi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\leopardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -188,11 +196,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj": {
-                "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj"
+              "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj": {
+                "projectPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.CORE\\PUNTO_FERRETERO.CORE.csproj"
               },
-              "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
-                "projectPath": "D:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj"
+              "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj": {
+                "projectPath": "C:\\projects\\Punto-ferretero-backend\\PUNTO_FERRETERO.DATA\\PUNTO_FERRETERO.DATA.csproj"
               }
             }
           }
@@ -217,6 +225,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.31, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.30, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -248,7 +260,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
