@@ -9,44 +9,44 @@ using System.Threading.Tasks;
 
 namespace PUNTO_FERRETERO.DATA.REPOSITORY
 {
-    public class UserRepository : IUserRepository
+    public class SalesRepository : ISalesRepository
     {
         private readonly PUNTO_FERRETEROContext _context;
-        public UserRepository(PUNTO_FERRETEROContext context)
+        public SalesRepository(PUNTO_FERRETEROContext context)
         {
             _context = context;
         }
 
-        public async Task<User> CreateUser(User data)
+        public async Task<Sales> CreateSales(Sales data)
         {
             _context.Add(data);
             await _context.SaveChangesAsync();
             return data;
         }
 
-        public async Task<bool> DeleteUser(Guid id)
+        public async Task<bool> DeleteSales(Guid id)
         {
-            User user = await _context.users.FindAsync(id);
-            user.isDeleted = true;
+            Sales Sales = await _context.Sales.FindAsync(id);
+            Sales.isDeleted = true;
             _context.SaveChanges();
             return true;
         }
 
-        public IEnumerable<User> GetAllUsers()
+        public IEnumerable<Sales> GetAllSales()
         {
-            List <User> data = _context.users.Where((e)=> !e.isDeleted).ToList();
+            List <Sales> data = _context.Sales.Where((e)=> !e.isDeleted).ToList();
             return data;
         }
 
-        public async Task<User> GetUserById(Guid id)
+        public async Task<Sales> GetSalesById(Guid id)
         {
-            User data = await _context.users.FindAsync(id);
+            Sales data = await _context.Sales.FindAsync(id);
             return data;
         }
 
-        public async Task<User> UpdateUser(User data)
+        public async Task<Sales> UpdateSales(Sales data)
         {
-            _context.users.Update(data);
+            _context.Sales.Update(data);
             await _context.SaveChangesAsync();
             return data;
         }

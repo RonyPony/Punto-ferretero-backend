@@ -9,7 +9,6 @@ namespace PUNTO_FERRETERO.DATA.DTO
 {
     public class UserDTO
     {
-        public Guid userId { get; set; }
         public string name { get; set; }
         public string lastName { get; set; }
         public string password { get; set; }

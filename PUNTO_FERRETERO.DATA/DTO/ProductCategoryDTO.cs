@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PUNTO_FERRETERO.DATA.DTO
 {
-    public class ProcutCategoryDTO
+    public class ProductCategoryDTO
     {
         public Guid productcategoryId { get; set; }
         public string productcategoryName { get; set; }

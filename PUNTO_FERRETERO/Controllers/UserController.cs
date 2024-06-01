@@ -19,7 +19,7 @@ namespace PUNTO_FERRETERO.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost("User")]
+        [HttpPost]
         public async Task<IActionResult> createUserAsync([FromBody] UserDTO value)
         {
             User newUser = new User();
@@ -38,8 +38,7 @@ namespace PUNTO_FERRETERO.Controllers
 
         }
 
-        // GET: api/<TicketController>
-        [HttpGet("User")]
+        [HttpGet]
         public IEnumerable<User> Get()
         {
 
@@ -47,28 +46,29 @@ namespace PUNTO_FERRETERO.Controllers
             return _UserService.GetAllUsers();
         }
 
-        [HttpGet("User/{id}")]
+        [HttpGet("{id}")]
         public async Task<User> GetAsync(Guid id)
         {
             return await _UserService.GetUserById(id);
         }
 
 
-        [HttpPut("User/{id}")]
+        [HttpPut("{id}")]
         public async Task PutAsync(Guid id, [FromBody] UserDTO value)
         {
             User newPlan = new User();
             newPlan = await _UserService.GetUserById(id);
             
             newPlan.name = value.name;
-            newPlan.lastName = value.lastName;  
+            newPlan.lastName = value.lastName;
+            newPlan.password = value.password;
             newPlan.updatedDate = DateTime.Now; 
             _UserService.UpdateUser(newPlan);
 
         }
 
 
-        [HttpDelete("User/{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAsync(Guid id)
         {
             bool deleted = await _UserService.DeleteUser(id);
