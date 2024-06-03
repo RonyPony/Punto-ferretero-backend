@@ -11,7 +11,6 @@ namespace PUNTO_FERRETERO.DATA.DTO
         public string productName { get; set; }
         public Guid productCategoryId { get; set; }
         public int itenCount { get; set; }
-        public DateTime updatedDate { get; set; }
         public string description { get; set; }
         public Guid discount { get; set; }
     }

@@ -13,7 +13,6 @@ namespace PUNTO_FERRETERO.DATA.DTO
         public decimal discountPorcentage { get; set; }
         public decimal discountTotal { get; set; }
         public string discountCode { get; set; }
-        public DateTime updatedDate { get; set; }
     }
 }
 
