@@ -27,6 +27,9 @@ builder.Services.AddTransient<ISalesService, SalesService>();
 builder.Services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 builder.Services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
+builder.Services.AddTransient<IDiscountRepository, DiscountRepository>();
+builder.Services.AddTransient<IDiscountService, DiscountService>();
+
 #endregion
 
 builder.Services.AddControllers();

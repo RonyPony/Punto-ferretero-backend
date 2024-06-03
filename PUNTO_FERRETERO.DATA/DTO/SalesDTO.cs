@@ -6,6 +6,5 @@
         public Guid discountId { get; set; }
         public Guid userId { get; set; }
         public decimal subTotal { get; set; }
-        public DateTime updatedDate { get; set; }
     }
 }

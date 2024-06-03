@@ -13,10 +13,12 @@ namespace PUNTO_FERRETERO.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _ProductService;
+        private readonly IProductCategoryService _ProductCategoryService;
 
-        public ProductController(IProductService serv)
+        public ProductController(IProductService serv, IProductCategoryService productCategoryService)
         {
             _ProductService = serv;
+            _ProductCategoryService = productCategoryService;
         }
 
         [AllowAnonymous]
@@ -28,7 +30,7 @@ namespace PUNTO_FERRETERO.Controllers
             newProduct.productName = value.productName;
             newProduct.itenCount = value.itenCount;
             newProduct.productCategoryId = value.productCategoryId;
-            newProduct.discount = value.discount;
+            newProduct.discountId = value.discount;
             newProduct.updatedDate = DateTime.Now;
             newProduct.createdDate = DateTime.Now;
             newProduct.isDeleted = false;
@@ -41,9 +43,8 @@ namespace PUNTO_FERRETERO.Controllers
 
         }
 
-        // GET: api/<TicketController>
         [HttpGet("Product")]
-        public IEnumerable<Product> Get()
+        public Task<IEnumerable<Product>> Get()
         {
 
 
@@ -65,7 +66,7 @@ namespace PUNTO_FERRETERO.Controllers
             newPlan.description = value.description;
             newPlan.productName = value.productName;
             newPlan.itenCount = value.itenCount;
-            newPlan.discount = value.discount;
+            newPlan.discountId = value.discount;
             newPlan.productCategoryId= value.productCategoryId;
             newPlan.updatedDate = DateTime.Now;
             _ProductService.UpdateProduct(newPlan);

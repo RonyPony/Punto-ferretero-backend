@@ -8,12 +8,10 @@ namespace PUNTO_FERRETERO.DATA.DTO
 {
     public class DiscountDTO
     {
-        public Guid discountId { get; set; }
         public string discountName { get; set; }
         public decimal discountPorcentage { get; set; }
         public decimal discountTotal { get; set; }
         public string discountCode { get; set; }
-        public DateTime updatedDate { get; set; }
     }
 }
 
