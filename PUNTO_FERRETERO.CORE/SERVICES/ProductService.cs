@@ -12,17 +12,10 @@ namespace PUNTO_FERRETERO.CORE.SERVICES
     public class ProductService : IProductService
     {
         private readonly IProductRepository _repo;
-        private readonly IProductCategoryRepository _categoryRepository;
-        private readonly IDiscountRepository _discountRepository;
 
-        public ProductService(IProductRepository ProductRepository,
-            IProductCategoryRepository categoryRepository, 
-            IDiscountRepository discountRepository
-            )
+        public ProductService(IProductRepository ProductRepository)
         {
             _repo = ProductRepository;
-           _categoryRepository = categoryRepository;
-           _discountRepository = discountRepository;
         }
         public IProductRepository Get_repo()
         {
@@ -56,30 +49,16 @@ namespace PUNTO_FERRETERO.CORE.SERVICES
             }
         }
 
-        public async Task<IEnumerable<Product>> GetAllProducts()
+        public IEnumerable<Product> GetAllProducts()
         {
             try
             {
-                IEnumerable<Product> data = _repo.GetAllProducts();
-                foreach (Product product in data)
-                {
-                    ProductCategory cat = await _categoryRepository.GetProductCategoryById(product.productCategoryId);
-                    Discount dis = await _discountRepository.GetDiscountById(product.discountId);
-                    if (cat != null )
-                    {
-                        product.productCategoryName = cat.productcategoryName;
-                        product.discountCode = dis.discountCode;
-                        product.discountName = dis.discountName;
-                    }
-                    
-                }
-                return data;
+                return _repo.GetAllProducts();
             }
             catch (Exception)
             {
 
                 throw;
-
             }
         }
 
@@ -95,7 +74,6 @@ namespace PUNTO_FERRETERO.CORE.SERVICES
                 throw;
             }
         }
-
 
         public Task<Product> UpdateProduct(Product data)
         {

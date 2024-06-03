@@ -482,11 +482,3 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
-*.cs
-*.cache
-*.cache
-*.txt
-*.editorconfig
-*.dll
-*.pdb
-*.dll
