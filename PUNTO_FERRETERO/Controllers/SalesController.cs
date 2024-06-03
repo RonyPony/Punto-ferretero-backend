@@ -39,7 +39,6 @@ namespace PUNTO_FERRETERO.Controllers
         public IEnumerable<Sales> Get()
         {
 
-
             return _SalesService.GetAllSales();
         }
 
