@@ -64,7 +64,8 @@ namespace PUNTO_FERRETERO.CORE.SERVICES
                 foreach (Product product in data)
                 {
                     ProductCategory cat = await _categoryRepository.GetProductCategoryById(product.productCategoryId);
-                    Discount dis = await _discountRepository.GetDiscountById(product.discountId);
+                    Discount dis = await _discountRepository.GetDiscountById(product.discountId!.Value);
+                    
                     if (cat != null)
                     {
                         product.productCategoryName = cat.productcategoryName;
