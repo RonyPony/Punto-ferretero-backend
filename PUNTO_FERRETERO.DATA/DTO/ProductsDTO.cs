@@ -8,6 +8,7 @@ namespace PUNTO_FERRETERO.DATA.DTO
 {
     public class ProductDTO
     {
+        public Guid productId { get; set; }
         public string productName { get; set; }
         public Guid productCategoryId { get; set; }
         public string? productCategoryName { get; set; }

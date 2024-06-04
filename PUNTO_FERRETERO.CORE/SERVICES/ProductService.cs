@@ -74,6 +74,7 @@ namespace PUNTO_FERRETERO.CORE.SERVICES
                     }
                     
                     ProductDTO tmp = new ProductDTO {
+                        productId = product.productId,
                         description = product.description,
                         productCategoryId = product.productCategoryId,
                         itenCount = product.itenCount,
