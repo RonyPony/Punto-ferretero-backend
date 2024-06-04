@@ -51,11 +51,11 @@ namespace PUNTO_FERRETERO.Controllers
 
         // GET: api/<TicketController>
         [HttpGet("Product")]
-        public Task<IEnumerable<Product>> Get()
+        public async Task<IActionResult> Get()
         {
 
-
-            return _ProductService.GetAllProducts();
+            List<ProductDTO> x =await  _ProductService.GetAllProducts();
+            return Ok(x);
         }
 
         [HttpGet("Product/{id}")]

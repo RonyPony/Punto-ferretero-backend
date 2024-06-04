@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using PUNTO_FERRETERO.DATA.REPOSITORY;
+using PUNTO_FERRETERO.DATA.DTO;
 
 namespace PUNTO_FERRETERO.CORE.SERVICES
 {
@@ -56,26 +57,44 @@ namespace PUNTO_FERRETERO.CORE.SERVICES
             }
         }
 
-        public async Task<IEnumerable<Product>> GetAllProducts()
+        public async Task<List<ProductDTO>> GetAllProducts()
         {
             try
             {
                 var data = _repo.GetAllProducts();
+                List<ProductDTO> deteo = new List<ProductDTO>();
+                //int[,] multiDimensionalArray2 = { { 1, 2, 3 }, { 4, 5, 6 } };
                 foreach (Product product in data)
                 {
                     ProductCategory cat = await _categoryRepository.GetProductCategoryById(product.productCategoryId);
                     Discount dis = await _discountRepository.GetDiscountById(product.discountId!.Value);
-                    
+                    ProductDTO tmp = new ProductDTO {
+                        description = product.description,
+                        productCategoryId = product.productCategoryId,
+                        itenCount = product.itenCount,
+                        productName = product.productName,
+                        discountCode = null,
+                        discountId = null,
+                        discountName = null,
+                        productCategoryName = null
+                    };
+                
                     if (cat != null)
                     {
-                        product.productCategoryName = cat.productcategoryName;
-                        product.discountCode = dis.discountCode;
-                        product.discountName = dis.discountName;
+                        tmp.productCategoryName = cat.productcategoryName;
                     }
+                    if (dis!= null)
+                    {
+                        tmp.discountCode = dis.discountCode;
+                        tmp.discountName = dis.discountName;
+                        tmp.discountId = dis.discountId;
+                    }
+
+                    deteo.Add(tmp);
 
                 }
                 
-                return data;
+                return deteo;
 
             }
             catch (Exception)

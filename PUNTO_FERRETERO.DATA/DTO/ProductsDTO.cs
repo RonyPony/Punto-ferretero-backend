@@ -10,12 +10,12 @@ namespace PUNTO_FERRETERO.DATA.DTO
     {
         public string productName { get; set; }
         public Guid productCategoryId { get; set; }
-        public string productCategoryName { get; set; }
+        public string? productCategoryName { get; set; }
         public int itenCount { get; set; }
         public string description { get; set; }
-        public Guid discountId { get; set; }
-        public string discountCode { get; set; }
-        public string discountName { get; set; }
+        public Guid? discountId { get; set; }
+        public string? discountCode { get; set; }
+        public string? discountName { get; set; }
     }
 }
 
