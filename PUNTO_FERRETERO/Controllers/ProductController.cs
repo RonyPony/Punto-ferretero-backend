@@ -37,6 +37,8 @@ namespace PUNTO_FERRETERO.Controllers
             newProduct.itenCount = value.itenCount;
             newProduct.productCategoryId = value.productCategoryId;
             newProduct.discountId = value.discountId;
+            newProduct.sellingPrice = value.sellingPrice;
+            newProduct.buyingPrice = value.buyingPrice;
             newProduct.updatedDate = DateTime.Now;
             newProduct.createdDate = DateTime.Now;
             newProduct.isDeleted = false;
@@ -72,6 +74,8 @@ namespace PUNTO_FERRETERO.Controllers
             newPlan = await _ProductService.GetProductById(id);
             newPlan.description = value.description;
             newPlan.productName = value.productName;
+            newPlan.sellingPrice = value.sellingPrice;
+            newPlan.buyingPrice= value.buyingPrice;
             newPlan.itenCount = value.itenCount;
             newPlan.discountId = value.discountId;
             newPlan.productCategoryId= value.productCategoryId;

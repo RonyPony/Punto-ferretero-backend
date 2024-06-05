@@ -12,6 +12,8 @@ namespace PUNTO_FERRETERO.DATA.MODELS
         [Key]
         public Guid productId { get; set; }
         public string productName { get; set; }
+        public decimal sellingPrice { get; set; }
+        public decimal buyingPrice { get; set; }
         public Guid productCategoryId { get; set; }
         public int itenCount { get; set; }
         public DateTime createdDate { get; set; }
