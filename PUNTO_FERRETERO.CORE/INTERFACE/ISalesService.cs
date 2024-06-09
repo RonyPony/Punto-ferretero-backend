@@ -14,6 +14,7 @@ namespace PUNTO_FERRETERO.CORE.INTERFACE
         public Task<Sales> CreateSales(Sales data);
         public Task<Sales> UpdateSales(Sales data);
         public Task<bool> DeleteSales(Guid id);
+        public int GetLastSaleNumber();
     }
 }
 

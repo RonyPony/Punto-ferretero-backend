@@ -38,6 +38,17 @@ namespace PUNTO_FERRETERO.DATA.REPOSITORY
             return data;
         }
 
+        public int GetLastSaleNumber()
+        {
+            Sales lastSale = _context.Sales.OrderBy(i => i.createdDate).Take(1).FirstOrDefault();
+            if(lastSale == null) {
+                return 0;
+            }
+            var lastSaleNumber = lastSale.salesNumer;
+            
+            return lastSaleNumber;
+        }
+
         public async Task<Sales> GetSalesById(Guid id)
         {
             Sales data = await _context.Sales.FindAsync(id);

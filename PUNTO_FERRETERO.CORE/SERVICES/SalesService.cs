@@ -88,6 +88,18 @@ namespace PUNTO_FERRETERO.CORE.SERVICES
             }
         }
 
-        
+        public int GetLastSaleNumber()
+        {
+            try
+            {
+                _repo.GetLastSaleNumber();
+                return _repo.GetLastSaleNumber();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

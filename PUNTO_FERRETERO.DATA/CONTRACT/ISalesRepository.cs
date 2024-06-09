@@ -13,6 +13,7 @@ namespace PUNTO_FERRETERO.DATA.CONTRACT
         public Task<Sales> GetSalesById(Guid id);
         public Task<Sales> CreateSales(Sales data);
         public Task<Sales> UpdateSales(Sales data);
+        public int GetLastSaleNumber();
         public Task<bool> DeleteSales(Guid id);
     }
 }

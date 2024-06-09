@@ -23,15 +23,21 @@ namespace PUNTO_FERRETERO.Controllers
         [HttpPost("Sales")]
         public async Task<IActionResult> createSalesAsync([FromBody] SalesDTO value)
         {
-            Sales newSales = new Sales();
-            
+            int lastSalesNumer = _SalesService.GetLastSaleNumber();
+            lastSalesNumer++; 
+            foreach (var product in value.productId)
+            {   
+                Sales newSale = new Sales();
+                newSale.salesNumer = lastSalesNumer;
+                newSale.productId = product;
+                newSale.subTotal = value.subTotal;
+                newSale.updatedDate = DateTime.Now;
+                newSale.createdDate = DateTime.Now;
+                newSale.isDeleted = false;
+                _SalesService.CreateSales(newSale);
+            }
 
-            Sales returningValue = await _SalesService.CreateSales(newSales);
-
-
-            return Ok(returningValue);
-
-
+            return Ok("Created");
         }
 
         // GET: api/<TicketController>
